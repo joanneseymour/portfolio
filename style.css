@@ -1,6 +1,73 @@
 body {
+    display: grid;
+}
+html {
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(./assets/gradienta-LeG68PrXA6Y-unsplash.jpg);
     height: 95vh;
+    padding: 12px;
+    display: grid;
+}
+
+body {
+    background-color: #eeeff1;
+    border-radius: 12px;
+    display: grid;
+    grid-template-rows: min-content;
+
+}
+
+nav{
+    grid-row: 1;
+}
+
+nav>ul{
+    display: grid;
+    list-style-type:none;
+    font-family: light-font;
+}
+
+#examplePortfolioLi{
+    grid-column: 1;
+}
+
+#githubLi{
+    grid-column: 2;
+}
+
+#linkedInLi{
+    grid-column: 3;
+}
+
+#aboutLi{
+    grid-column: 4;
+}
+
+#contactLi{
+    grid-column: 5;
+}
+
+main{
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: min-content min-content;
+}
+
+
+h1, h2{
+    font-family: light-font;
+    text-align: center;
+}
+
+
+#personImg {
+    height: 200px;
+    margin: auto;
+    grid-row: 2;
+}
+
+@font-face{
+    src: url(./assets/fonts/Nunito-Light.ttf);
+    font-family: light-font;
 }

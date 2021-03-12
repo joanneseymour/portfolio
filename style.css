@@ -1,35 +1,49 @@
+
 body {
-    display: grid;
-}
-html {
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(./assets/gradienta-LeG68PrXA6Y-unsplash.jpg);
-    height: 95vh;
+    height: 100%;
     padding: 12px;
     display: grid;
 }
 
-body {
+#introDiv {
     background-color: #eeeff1;
-    border-radius: 12px;
+    border-radius: 0px 0px 12px 12px;
     display: grid;
-    grid-template-rows: min-content;
-
+    grid-template-rows: repeat(5, min-content);
+    height: min-content;
+    padding: 36px 96px;
 }
 
+
+#findOutMoreDiv{
+    grid-row: 5;
+}
 nav{
+    display: grid;
     grid-row: 1;
+    background-color: #eeeff1;
+    border-radius: 12px 12px 0px 0px;
+
 }
 
 nav>ul{
     display: grid;
+    grid-template-columns: 8fr repeat(6, min-content);
+    border-bottom: solid grey 1px;
     list-style-type:none;
     font-family: light-font;
 }
 
+nav>ul>li{
+    padding: 0px 12px;
+}
+
 #examplePortfolioLi{
     grid-column: 1;
+    padding: 0px;
 }
 
 #githubLi{
@@ -55,19 +69,64 @@ main{
 }
 
 
-h1, h2{
+h1, h2, h3{
     font-family: light-font;
     text-align: center;
 }
 
+p,  h4, h5{
+    font-family: light-font;
+}
+
+#introDiv{
+    text-align: center;
+}
 
 #personImg {
     height: 200px;
     margin: auto;
     grid-row: 2;
+    border-radius: 100px;
 }
 
 @font-face{
     src: url(./assets/fonts/Nunito-Light.ttf);
     font-family: light-font;
+}
+
+#careerDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #eeeff1;
+    border-radius: 12px;
+}
+
+#careerP{
+    grid-column: 1;
+}
+
+#careerTags{
+    grid-column: 2;
+    padding: 12px;
+    border-left: solid grey 1px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+#careerTags > span{
+    border: solid grey 2px;
+    border-radius: 5px;
+    margin: 3px;
+    padding: 3px;
+    font-family: light-font;
+    height: min-content;
+    width: max-content;
+}
+
+.section{
+    margin-top: 36px;
+    background-color: #eeeff1;
+    border-radius: 12px;
+    padding: 36px 100px;
 }

@@ -12,15 +12,56 @@ body {
     background-color: #eeeff1;
     border-radius: 0px 0px 12px 12px;
     display: grid;
-    grid-template-rows: repeat(5, min-content);
+    grid-template-rows: repeat(4, min-content);
+    grid-template-columns: 4fr 1fr;
     height: min-content;
     padding: 36px 96px;
+    border: solid #fccc97 8px;
+    border-top: none;
 }
 
+
+#introDiv > h1{
+    grid-row: 1;
+    grid-column: 1;
+}
+#introDiv > h2{
+    grid-row: 2;
+    grid-column: 1;
+    margin: 0px;
+}
+
+#introP{
+    grid-row: 3;
+    grid-column: 1;
+    margin-bottom: 96px;
+}
+
+#personImg {
+    height: 250px;
+    grid-row: 2;
+    border-radius: 200px;
+    grid-column: 2;
+    grid-row: 1/4;
+    margin-left: 36px;
+}
 
 #findOutMoreDiv{
-    grid-row: 5;
+    grid-row: 4;
+    grid-column: 1/3;
+    text-align: center;
+    background-color: #59aef4;
+    width: 200px;
+    border-radius: 100px;
+    justify-self: center;
 }
+
+#findOutMoreDiv > p{
+    font-size: 16px;
+    padding: 16px;
+    margin: 0px;
+}
+
 nav{
     display: grid;
     grid-row: 1;
@@ -28,18 +69,20 @@ nav{
     border-radius: 12px 12px 0px 0px;
     border: solid #fccc97 8px;
     border-bottom: none;
+
 }
 
 nav>ul{
     display: grid;
     grid-template-columns: 8fr repeat(6, min-content);
-    border-bottom: solid grey 1px;
     list-style-type:none;
     font-family: light-font;
+    padding: 0px 16px;
 }
 
 nav>ul>li{
-    padding: 0px 12px;
+    padding: 0px 12px 16px 12px;
+    border-bottom: solid #fccc97 1px;
 }
 
 #examplePortfolioLi{
@@ -72,29 +115,22 @@ main{
 h1{
     font-family: extra-light-font;
     font-size: 64px;
+    margin: 0px;
 }
 
 h2, h3{
     font-family: extra-light-font;
-    text-align: center;
 }
 
 p,  h4, h5{
     font-family: extra-light-font;
 }
 
-#introDiv{
-    text-align: center;
-    border: solid #fccc97 8px;
-    border-top: none;
+p{
+    font-size: 24px;
 }
 
-#personImg {
-    height: 200px;
-    margin: auto;
-    grid-row: 2;
-    border-radius: 100px;
-}
+
 
 @font-face{
     src: url(./assets/fonts/Nunito-Light.ttf);
@@ -168,7 +204,6 @@ p,  h4, h5{
     grid-column: 2;
     grid-row: 1/3;
     padding: 0px 36px;
-    font-size: 24px;
     margin: 0px;
 }
 
